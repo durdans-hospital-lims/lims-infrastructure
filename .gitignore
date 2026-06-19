@@ -11,3 +11,7 @@
 # time; never commit them, especially to a public repo.
 keycloak-imports/*-realm.json
 keycloak-imports/*realm*.json
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
