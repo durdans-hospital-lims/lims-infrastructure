@@ -1,0 +1,13 @@
+# Local environment / secrets — never commit
+.env
+*.env
+!.env.example
+
+# LocalStack / runtime state
+.localstack/
+
+# Keycloak realm exports — contain client secrets, realm signing keys and real
+# user data (PII + password hashes). Import these from a secret store at deploy
+# time; never commit them, especially to a public repo.
+keycloak-imports/*-realm.json
+keycloak-imports/*realm*.json
